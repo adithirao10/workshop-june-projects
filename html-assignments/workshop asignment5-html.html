@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content = "width=device-width,intial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <style>
+        body{
+            width:600px;
+            height: 100px;
+            
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header , footer{
+            width: 100%;
+            background-color: grey;
+            height: 100px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+        }
+        nav{
+            width: 600px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cornflowerblue;
+            border-style: solid;
+
+        }
+        section.row{
+            width:100%
+        }
+        /*section.row::after{
+            content: '';
+            display: block;
+            clear: both;
+        }*/
+
+        section.row aside{
+
+            float:right;
+            width:50%;
+            height: 500px;
+            background-color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+        }
+        section.row article{
+            width: 50%;
+            height: 500px;
+            float: left;
+            background-color: lightgreen;
+            display: flex;
+            flex-direction: column;
+
+        }
+        section.row article .leftside{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+
+        }
+    </style>
+    <body>
+    <header>
+        Header
+    </header>
+    <nav>
+        Nav
+    </nav>
+
+    <section class = "row">
+        <article>
+        <div class = "leftside">Headings</div>
+        <div class = "leftside">Article</div>
+        </article>
+
+        <aside>
+            Aside
+        </aside>
+    </section>
+
+    <footer>
+        Footer
+    </footer>
+</body>
+    </html>
+        
